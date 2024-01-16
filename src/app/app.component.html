@@ -1,3 +1,10 @@
-<app-elenco [titolo]=" 'titolo passato da app-route 1' " [test]="title" (eventoContatore) = "eventoContatore($event)" [valCount]="contatoreGlobale"></app-elenco>
+<!--<app-elenco [titolo]=" 'titolo passato da app-route 1' " [test]="title" (eventoContatore) = "eventoContatore($event)" [valCount]="contatoreGlobale"></app-elenco>
 <app-elenco [titolo]=" 'titolo passato da app-route 2' " [test]="title" (eventoContatore) = "eventoContatore($event)" [valCount]="contatoreGlobale"></app-elenco>
-<p>valore del contatore della prima componente {{contatoreGlobale}}</p>
+<p>valore del contatore della prima componente {{contatoreGlobale}}</p>-->
+<button (click)="mod_visibile()">{{testo_button}}</button>
+<p *ngIf="visibile; else alternativa">
+    Sium
+</p>
+<ng-template #alternativa>
+    <p> </p>
+</ng-template>
