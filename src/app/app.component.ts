@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primoEsempio';
+  contatoreGlobale: number=0;
+  eventoContatore(valore: number){
+    this.contatoreGlobale = valore
+  }
 }
